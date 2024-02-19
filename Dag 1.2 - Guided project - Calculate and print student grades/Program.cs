@@ -24,3 +24,63 @@ int jeong2 = 92;
 int jeong3 = 98;
 int jeong4 = 100;
 int jeong5 = 97;
+
+Console.WriteLine('b');
+Console.WriteLine(123);
+Console.WriteLine(0.25F);
+Console.WriteLine(2.625);
+Console.WriteLine(12.39816m);
+
+Console.WriteLine(true);
+Console.WriteLine(false);
+
+Console.WriteLine("123");
+Console.WriteLine(123);
+
+Console.WriteLine("true");
+Console.WriteLine(true);
+
+//string firstName;
+
+char userOption;
+
+int gameScore;
+
+decimal particlesPerMillion;
+
+bool processedCustomer;
+
+//string firstName;
+//firstName = "Bob";
+//Console.WriteLine(firstName);
+
+string firstName;
+firstName = "Bob";
+Console.WriteLine(firstName);
+firstName = "Liem";
+Console.WriteLine(firstName);
+firstName = "Isabella";
+Console.WriteLine(firstName);
+firstName = "Yasmin";
+Console.WriteLine(firstName);
+
+var message = "Hello world!";
+
+//Challange 
+
+string name;
+name = "Bob";
+
+int number;
+number = 3;
+
+decimal degree;
+degree = 34.4m;
+
+Console.WriteLine("Hello, ");
+Console.WriteLine(name);
+Console.WriteLine("! You have ");
+Console.WriteLine(number);
+Console.Write(" message in your inbox. The temperature is ");
+Console.Write(degree);
+Console.WriteLine("celsius.");
