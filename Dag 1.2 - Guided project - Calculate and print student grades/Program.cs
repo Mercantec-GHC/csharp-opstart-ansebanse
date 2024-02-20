@@ -25,62 +25,22 @@ int jeong3 = 98;
 int jeong4 = 100;
 int jeong5 = 97;
 
-Console.WriteLine('b');
-Console.WriteLine(123);
-Console.WriteLine(0.25F);
-Console.WriteLine(2.625);
-Console.WriteLine(12.39816m);
 
-Console.WriteLine(true);
-Console.WriteLine(false);
+//delacring the varibles
+int sophiaSum = sophia1 + sophia2 + sophia3 + sophia4 + sophia5;
+int nicolasSum = nicolas1 + nicolas2 + nicolas3 + nicolas4 + nicolas5;
+int zahirahSum = zahirah1 + zahirah2 + zahirah3 + zahirah4 + zahirah5;
+int jeongSum = jeong1 + jeong2 + jeong3 + jeong4 + jeong5;
 
-Console.WriteLine("123");
-Console.WriteLine(123);
 
-Console.WriteLine("true");
-Console.WriteLine(true);
+decimal sophiaScore = (decimal)sophiaSum / currentAssignments;
+decimal nicolasScore = (decimal)nicolasSum / currentAssignments;
+decimal zahirahScore = (decimal)zahirahSum / currentAssignments;
+decimal jeongScore = (decimal)jeongSum / currentAssignments;
 
-//string firstName;
+Console.WriteLine("Student\t\tGrade\n");
+Console.WriteLine("Sophia:\t\t" + sophiaScore + "\tA");
+Console.WriteLine("Nicolas:\t" + nicolasScore + "\tB");
+Console.WriteLine("Zahirah:\t" + zahirahScore + "\tB");
+Console.WriteLine("Jeong:\t\t" + jeongScore + "\tA");
 
-char userOption;
-
-int gameScore;
-
-decimal particlesPerMillion;
-
-bool processedCustomer;
-
-//string firstName;
-//firstName = "Bob";
-//Console.WriteLine(firstName);
-
-string firstName;
-firstName = "Bob";
-Console.WriteLine(firstName);
-firstName = "Liem";
-Console.WriteLine(firstName);
-firstName = "Isabella";
-Console.WriteLine(firstName);
-firstName = "Yasmin";
-Console.WriteLine(firstName);
-
-var message = "Hello world!";
-
-//Challange 
-
-string name;
-name = "Bob";
-
-int number;
-number = 3;
-
-decimal degree;
-degree = 34.4m;
-
-Console.WriteLine("Hello, ");
-Console.WriteLine(name);
-Console.WriteLine("! You have ");
-Console.WriteLine(number);
-Console.Write(" message in your inbox. The temperature is ");
-Console.Write(degree);
-Console.WriteLine("celsius.");
