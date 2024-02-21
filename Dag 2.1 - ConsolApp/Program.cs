@@ -26,10 +26,10 @@ if (message.Contains("fox"))
 }
 
 //Opgave:
-Random dice = new Random();
+Random dice1 = new Random();
 
-int roll1 = dice.Next(1, 7);
-int roll2 = dice.Next(1, 7);
+int roll1 = dice1.Next(1, 7);
+int roll2 = dice1.Next(1, 7);
 int roll3 = dice.Next(1, 7);
 
 int total = roll1 + roll2 + roll3;
@@ -117,3 +117,20 @@ foreach (string orderID in orderIDs)
 }
 
 //Create readable code with conventions, whitespace, and comments in C#
+
+Random random1 = new Random();
+string[] orderIDs1 = new string[5];
+
+for (int i = 0; i < orderIDs1.Length; i++)
+{
+    int prefixValue = random.Next(65, 70);
+    string prefix = Convert.ToChar(prefixValue).ToString();
+    string suffix = random.Next(1, 1000).ToString("000");
+
+    orderIDs1[i] = prefix + suffix;
+}
+
+foreach (var orderID in orderIDs1)
+{
+    Console.WriteLine(orderID);
+}

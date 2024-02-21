@@ -189,11 +189,11 @@ int value = 0;     // value is now 0.
 value = value + 5; // value is now 5.
 value += 5;        // value is now 10.
 
-int value = 0;     // value is now 0.
+//int value = 0;     // value is now 0.
 value = value + 1; // value is now 1.
-va2lue++;           // value is now 2.
+//va2lue++;           // value is now 2.
 
-int value = 1;
+//int value = 1;
 
 value = value + 1;
 Console.WriteLine("First increment: " + value);
@@ -213,7 +213,7 @@ Console.WriteLine("Second decrement: " + value);
 value--;
 Console.WriteLine("Third decrement: " + value);
 
-int value = 1;
+//int value = 1;
 value++;
 Console.WriteLine("First: " + value);
 Console.WriteLine($"Second: {value++}");
