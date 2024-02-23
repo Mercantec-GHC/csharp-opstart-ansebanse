@@ -155,13 +155,161 @@ else
 
 //Create a variable inside of a code block
 bool flag = true;
+int value = 0;
+
 if (flag)
 {
-    int value = 10;
     Console.WriteLine($"Inside the code block: {value}");
 }
 
-//
+value = 10;
+Console.WriteLine($"Outside the code block: {value}");
+
+//Recap
+//Here are a few important things to remember about code blocks:
+
+//When you declare a variable inside a code block, its visibility is local to that code block and that variable cannot be accessed outside of the code block.
+//To ensure that a variable is visible both inside and outside of a code block, you must declare the variable prior to the code block (outside and above the code block).
+//Ensure that variables are initialized before your code attempts to access them (for all potential code execution paths).
+
+//Remove code blocks from if statements
+bool flag1 = true;
+if (flag1) Console.WriteLine(flag1);
+
+string name = "steve";
+
+if (name == "bob")
+    Console.WriteLine("Found Bob");
+else if (name == "steve")
+    Console.WriteLine("Found Steve");
+else
+    Console.WriteLine("Found Chuck");
+
+//Recap
+//Here are a few important things to remember about if statement code blocks and readability:
+
+//If you realize you have only one line of code listed within the code blocks of an if-elseif-else statement, you can remove the curly braces of the code block and white space. Microsoft recommends that curly braces be used consistently for all of the code blocks of an if-elseif-else statement (either present or removed consistently).
+//Only remove the curly braces of a code block when it makes the code more readable. It's always acceptable to include curly braces.
+//Only remove the line feed if it makes the code more readable. Microsoft suggests that your code will be more readable when each statement is placed on its own code line.
+
+//Solution for challenge activiy using variable scope
+int[] numbers = { 4, 8, 15, 16, 23, 42 };
+int total = 0;
+bool found = false;
+
+foreach (int number in numbers)
+{
+    total += number;
+    if (number == 42)
+        found = true;
+}
+
+if (found)
+    Console.WriteLine("Set contains 42");
+
+Console.WriteLine($"Total: {total}");
+
+//Branch the flow of code using the switch-case construct
+//Exercise - Implement a switch statement
+
+int employeeLevel = 200;
+string employeeName = "John Smith";
+
+string title = "";
+
+switch (employeeLevel)
+{
+    case 100:
+        title = "Junior Associate";
+        break;
+    case 200:
+        title = "Senior Associate";
+        break;
+    case 300:
+        title = "Manager";
+        break;
+    case 400:
+        title = "Senior Manager";
+        break;
+    default:
+        title = "Associate";
+        break;
+}
+
+Console.WriteLine($"{employeeName}, {title}");
+
+//Recap
+
+//Use the switch statement when you have one value with many possible matches, each match requiring a branch in your code logic.
+//A single switch section containing code logic can be matched using one or more labels defined by the case keyword.
+//Use the optional default keyword to create a label and a switch section that will be used when no other case labels match.
+
+//The solution to the switch statement challenge activity
+// SKU = Stock Keeping Unit
+string sku = "01-MN-L";
+
+string[] product = sku.Split('-');
+
+string type = "";
+string color = "";
+string size = "";
+
+switch (product[0])
+{
+    case "01":
+        type = "Sweat shirt";
+        break;
+    case "02":
+        type = "T-Shirt";
+        break;
+    case "03":
+        type = "Sweat pants";
+        break;
+    default:
+        type = "Other";
+        break;
+}
+
+switch (product[1])
+{
+    case "BL":
+        color = "Black";
+        break;
+    case "MN":
+        color = "Maroon";
+        break;
+    default:
+        color = "White";
+        break;
+}
+
+switch (product[2])
+{
+    case "S":
+        size = "Small";
+        break;
+    case "M":
+        size = "Medium";
+        break;
+    case "L":
+        size = "Large";
+        break;
+    default:
+        size = "One Size Fits All";
+        break;
+}
+
+Console.WriteLine($"Product: {size} {color} {type}");
+
+//Iterate through a code block using for statement
+//Create and configure for iteration loops
+//What is the for statement?
+//The for statement iterates through a code block a specific number of times. This level of control makes the for statement unique among the other iteration statements. The foreach statement iterates through a block of code once for each item in a sequence of data like an array or collection. The while statement iterates through a block of code until a condition is met.
+
+//Furthermore, the for statement gives you much more control over the process of iteration by exposing the conditions for iteration.
+
+
+
 /*
 using System;
 using System.IO;
